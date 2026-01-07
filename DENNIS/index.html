@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Extra Classes Registration Form</h2>
+        <form id="registrationForm" novalidate>
+            <div class=" form-group">
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName"required>
+                <span class="error" id="studentNameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email"required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"required>
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="grade">Current Grade/Year</label>
+                <select id="grade" required>
+                    <option value="">Select grade</option>
+                    <option value="Grade 6">Grade 6</option>
+                    <option value="Grade 7">Grade 7</option>
+                    <option value="Grade 8">Grade 8</option>
+                    <option value="Grade 9">Grade 9</option>
+                    <option value="Grade 10">Grade 10</option>
+                    <option value="Grade 11">Grade 11</option>
+                    <option value="Grade 12">Grade 12</option>
+                </select>
+                <span class="error" id="gradeError"></span>
+            </div>
+            <div class="form-group">
+                <label>Subjects Intrested In (select at least one)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="math" value="Mathematics">
+                        <label for="math">Mathematics</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="science" value="Science">
+                        <label for="science">Science</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="english" value="English">
+                        <label for="english">English</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="history" value="History">
+                        <label for="history">History</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="programming" value="Programming">
+                        <label for="programming">Programming</label>
+                    </div>
+                </div>
+                <span class="error" id="subjectsError"></span>
+            </div>
+            <div class="form-group">
+                <label for="prefferedDate">Preffered Start Date</label>
+                <input type="date" id="prefferedDate" required>
+                <span class="error" id="prefferedDate"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Additional Notes (optional)</label>
+                <textarea id="notes" rows="3" placerholder="Any specific requirements or comments..."></textarea>
+            </div>
+            <button type="submit">Register for Extra Classes</button>
+
+
+
+        </form>
+        <div id="success-message">
+            Regisration successful! We will contact you soon.
+        </div>
+    </div>
+</body>
+</html>
